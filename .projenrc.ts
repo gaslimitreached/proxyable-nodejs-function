@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'proxyable-nodejs-function',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gaslimitreached/proxyable-nodejs-function.git',
+  releaseToNpm: true,
 });
 
 project.synth();
