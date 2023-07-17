@@ -22,9 +22,9 @@ export class ProxyableNodejsFunction extends NodejsFunction {
       ? props.environment
       : {
         DATABASE_NAME: props.database as string,
+        POSTGRES_URL: props.proxy!.endpoint as string,
         POSTGRES_USER: props.username as string,
         PROXY_NAME: props.proxy!.dbProxyName as string,
-        PROXY_ENDPOINT: props.proxy!.endpoint as string,
         PROXY_ARN: props.proxy!.dbProxyArn as string,
         POSTGRES_SECRET_NAME: props.secret!.secretFullArn as string,
         ...props.environment,
