@@ -1147,7 +1147,6 @@ const proxyableNodejsFunctionProps: ProxyableNodejsFunctionProps = { ... }
 | <code><a href="#proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.runtime">runtime</a></code> | <code>aws-cdk-lib.aws_lambda.Runtime</code> | The runtime environment. |
 | <code><a href="#proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.database">database</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.proxy">proxy</a></code> | <code>aws-cdk-lib.aws_rds.IDatabaseProxy</code> | *No description.* |
-| <code><a href="#proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.secret">secret</a></code> | <code>aws-cdk-lib.aws_secretsmanager.ISecret</code> | *No description.* |
 | <code><a href="#proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.username">username</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -1850,16 +1849,6 @@ public readonly proxy: IDatabaseProxy;
 ```
 
 - *Type:* aws-cdk-lib.aws_rds.IDatabaseProxy
-
----
-
-##### `secret`<sup>Optional</sup> <a name="secret" id="proxyable-nodejs-function.ProxyableNodejsFunctionProps.property.secret"></a>
-
-```typescript
-public readonly secret: ISecret;
-```
-
-- *Type:* aws-cdk-lib.aws_secretsmanager.ISecret
 
 ---
 
