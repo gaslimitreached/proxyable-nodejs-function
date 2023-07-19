@@ -82,11 +82,10 @@ describe('ProxyableNodejsFunction with proxy', () => {
         'Allow lambda proxy connections',
       );
 
-
       const proxy = db.addProxy('TestProxy', {
         secrets: [db.secret!],
         securityGroups: [connectionGroup],
-        iamAuth: false,
+        iamAuth: true,
         vpc,
       });
 
@@ -94,7 +93,6 @@ describe('ProxyableNodejsFunction with proxy', () => {
         entry: join(__dirname, 'index.ts'),
         vpc,
         proxy,
-        secret,
         database: 'test',
         username: 'testuser',
       });
